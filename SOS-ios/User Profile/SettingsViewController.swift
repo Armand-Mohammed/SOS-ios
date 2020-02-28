@@ -28,7 +28,6 @@ class SettingsViewController: UIViewController, UINavigationControllerDelegate {
     }
     
     // MARK: - Helper Functions
-    var potato
     
     func configureTableView() {
         tableView = UITableView()

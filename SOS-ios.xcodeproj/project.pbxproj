@@ -25,11 +25,18 @@
 		A4B0191A23D76DDA0035964C /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B0191923D76DDA0035964C /* EditProfileViewController.swift */; };
 		A4B0191C23D76FE70035964C /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B0191B23D76FE70035964C /* UserProfileViewController.swift */; };
 		A4B0191F23D770280035964C /* FakeCallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B0191E23D770280035964C /* FakeCallViewController.swift */; };
-		C08A95312409A62800A19DDB /* SOS_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08A95302409A62800A19DDB /* SOS_iosTests.swift */; };
+		C08A95482409B8F500A19DDB /* FakeCallViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08A95472409B8F500A19DDB /* FakeCallViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		C08A95332409A62800A19DDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A410A37322F5F48F00C3B837 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A410A37A22F5F48F00C3B837;
+			remoteInfo = "SOS-ios";
+		};
+		C08A95412409B74600A19DDB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A410A37322F5F48F00C3B837 /* Project object */;
 			proxyType = 1;
@@ -60,8 +67,9 @@
 		A4B0191B23D76FE70035964C /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		A4B0191E23D770280035964C /* FakeCallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeCallViewController.swift; sourceTree = "<group>"; };
 		C08A952E2409A62800A19DDB /* SOS-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SOS-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C08A95302409A62800A19DDB /* SOS_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOS_iosTests.swift; sourceTree = "<group>"; };
-		C08A95322409A62800A19DDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C08A953C2409B74600A19DDB /* SOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C08A95462409B75D00A19DDB /* TestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = TestPlan.xctestplan; path = SOSTests/TestPlan.xctestplan; sourceTree = "<group>"; };
+		C08A95472409B8F500A19DDB /* FakeCallViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FakeCallViewControllerTests.swift; path = SOSTests/FakeCallViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,14 +88,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C08A95392409B74600A19DDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		A410A37222F5F48F00C3B837 = {
 			isa = PBXGroup;
 			children = (
+				C08A95472409B8F500A19DDB /* FakeCallViewControllerTests.swift */,
+				C08A95462409B75D00A19DDB /* TestPlan.xctestplan */,
 				A410A37D22F5F48F00C3B837 /* SOS-ios */,
-				C08A952F2409A62800A19DDB /* SOS-iosTests */,
 				A410A37C22F5F48F00C3B837 /* Products */,
 				A4163EEE2349087500F28FCE /* Frameworks */,
 			);
@@ -98,6 +114,7 @@
 			children = (
 				A410A37B22F5F48F00C3B837 /* SOS-ios.app */,
 				C08A952E2409A62800A19DDB /* SOS-iosTests.xctest */,
+				C08A953C2409B74600A19DDB /* SOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -183,15 +200,6 @@
 			path = "Fake Call";
 			sourceTree = "<group>";
 		};
-		C08A952F2409A62800A19DDB /* SOS-iosTests */ = {
-			isa = PBXGroup;
-			children = (
-				C08A95302409A62800A19DDB /* SOS_iosTests.swift */,
-				C08A95322409A62800A19DDB /* Info.plist */,
-			);
-			path = "SOS-iosTests";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -230,6 +238,24 @@
 			productReference = C08A952E2409A62800A19DDB /* SOS-iosTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		C08A953B2409B74600A19DDB /* SOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C08A95452409B74600A19DDB /* Build configuration list for PBXNativeTarget "SOSTests" */;
+			buildPhases = (
+				C08A95382409B74600A19DDB /* Sources */,
+				C08A95392409B74600A19DDB /* Frameworks */,
+				C08A953A2409B74600A19DDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C08A95422409B74600A19DDB /* PBXTargetDependency */,
+			);
+			name = SOSTests;
+			productName = SOSTests;
+			productReference = C08A953C2409B74600A19DDB /* SOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -245,6 +271,11 @@
 					};
 					C08A952D2409A62800A19DDB = {
 						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = A410A37A22F5F48F00C3B837;
+					};
+					C08A953B2409B74600A19DDB = {
+						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 						TestTargetID = A410A37A22F5F48F00C3B837;
 					};
 				};
@@ -264,6 +295,7 @@
 			targets = (
 				A410A37A22F5F48F00C3B837 /* SOS-ios */,
 				C08A952D2409A62800A19DDB /* SOS-iosTests */,
+				C08A953B2409B74600A19DDB /* SOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -279,6 +311,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		C08A952C2409A62800A19DDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C08A953A2409B74600A19DDB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -314,7 +353,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C08A95312409A62800A19DDB /* SOS_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C08A95382409B74600A19DDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C08A95482409B8F500A19DDB /* FakeCallViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +371,11 @@
 			isa = PBXTargetDependency;
 			target = A410A37A22F5F48F00C3B837 /* SOS-ios */;
 			targetProxy = C08A95332409A62800A19DDB /* PBXContainerItemProxy */;
+		};
+		C08A95422409B74600A19DDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A410A37A22F5F48F00C3B837 /* SOS-ios */;
+			targetProxy = C08A95412409B74600A19DDB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -532,6 +583,51 @@
 			};
 			name = Release;
 		};
+		C08A95432409B74600A19DDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HU9JXP9R27;
+				INFOPLIST_FILE = SOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ArmandDevOps.SOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SOS-ios.app/SOS-ios";
+			};
+			name = Debug;
+		};
+		C08A95442409B74600A19DDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HU9JXP9R27;
+				INFOPLIST_FILE = SOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ArmandDevOps.SOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SOS-ios.app/SOS-ios";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -558,6 +654,15 @@
 			buildConfigurations = (
 				C08A95352409A62800A19DDB /* Debug */,
 				C08A95362409A62800A19DDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C08A95452409B74600A19DDB /* Build configuration list for PBXNativeTarget "SOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C08A95432409B74600A19DDB /* Debug */,
+				C08A95442409B74600A19DDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

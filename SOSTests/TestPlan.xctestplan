@@ -1,0 +1,18 @@
+{
+  "configurations" : [
+    {
+      "id" : "FCA9C394-33BC-43DF-85AB-C6EE5D6D8722",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+
+  ],
+  "version" : 1
+}

@@ -14,7 +14,6 @@ class FakeCallViewController: UIViewController {
         super.viewDidLoad()
 
         setupView()
-        var potato
     }
     
     func setupView() {

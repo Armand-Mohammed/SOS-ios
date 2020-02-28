@@ -18,9 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         
         // Main Menu
-//        let layout = UICollectionViewFlowLayout()
-//        let mainViewController = HomeCollectionViewController(collectionViewLayout: layout)
-//        window!.rootViewController = mainViewController
+        let layout = UICollectionViewFlowLayout()
+        let mainViewController = HomeCollectionViewController(collectionViewLayout: layout)
+        window!.rootViewController = mainViewController
 
         // Youtube
 //        let mainViewController = SelfDefenseController()
