@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Kh4-4z-B58">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SOS Security App-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SOS_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8t-zK-cAh">
+                                <rect key="frame" x="25" y="80" width="150" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="6QV-2x-XSg"/>
+                                    <constraint firstAttribute="width" constant="150" id="U89-vf-7zs"/>
+                                </constraints>
+                                <state key="normal" title="Self Defense">
+                                    <color key="titleColor" red="0.15356618165969849" green="0.11398909240961075" blue="0.44316354393959045" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="selfDefenseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pbx-2c-Wdk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpt-aV-3yA">
+                                <rect key="frame" x="239" y="80" width="150" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="MQN-cL-adD"/>
+                                    <constraint firstAttribute="width" constant="150" id="P8v-a0-Xo0"/>
+                                </constraints>
+                                <state key="normal" title="FGCU Police">
+                                    <color key="titleColor" red="0.1535661817" green="0.11398909240000001" blue="0.44316354390000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wif-kn-4ty">
+                                <rect key="frame" x="239" y="296" width="150" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="2sn-W2-3bM"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="8oG-X8-a0y"/>
+                                </constraints>
+                                <state key="normal" title="Location Awareness">
+                                    <color key="titleColor" red="0.1535661817" green="0.11398909240000001" blue="0.44316354390000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ehf-LA-gh0">
+                                <rect key="frame" x="25" y="512" width="150" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="dZg-kT-hcw"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="dpj-9q-QQk"/>
+                                </constraints>
+                                <state key="normal" title="Messaging Portal">
+                                    <color key="titleColor" red="0.1535661817" green="0.11398909240000001" blue="0.44316354390000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BwG-uF-S29">
+                                <rect key="frame" x="239" y="512" width="150" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="mW0-i6-DXx"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="tKm-YS-Emv"/>
+                                </constraints>
+                                <state key="normal" title="Social Media">
+                                    <color key="titleColor" red="0.1535661817" green="0.11398909240000001" blue="0.44316354390000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SOS Security App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2V-pX-EWF">
+                                <rect key="frame" x="110.5" y="25" width="193" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.15356618165969849" green="0.11398909240961075" blue="0.44316354393959045" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24k-7W-C3s">
+                                <rect key="frame" x="25" y="296" width="150" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="Dzp-Ne-Z2n"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="oH0-6c-lmn"/>
+                                </constraints>
+                                <state key="normal" title="Safety Timer">
+                                    <color key="titleColor" red="0.1535661817" green="0.11398909240000001" blue="0.44316354390000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="V2V-pX-EWF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1vt-EC-eHt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jpt-aV-3yA" secondAttribute="trailing" constant="25" id="A7b-Zv-R9v"/>
+                            <constraint firstItem="24k-7W-C3s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="BNb-XD-cUf"/>
+                            <constraint firstItem="r8t-zK-cAh" firstAttribute="top" secondItem="V2V-pX-EWF" secondAttribute="bottom" constant="25" id="Fpt-Bm-Xc6"/>
+                            <constraint firstItem="Wif-kn-4ty" firstAttribute="top" secondItem="jpt-aV-3yA" secondAttribute="bottom" constant="16" id="Qj3-vB-z2I"/>
+                            <constraint firstItem="Ehf-LA-gh0" firstAttribute="top" secondItem="24k-7W-C3s" secondAttribute="bottom" constant="16" id="R22-54-mwm"/>
+                            <constraint firstItem="Ehf-LA-gh0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="WwG-t6-J7H"/>
+                            <constraint firstItem="jpt-aV-3yA" firstAttribute="top" secondItem="V2V-pX-EWF" secondAttribute="bottom" constant="25" id="Ycz-Fu-w5y"/>
+                            <constraint firstItem="r8t-zK-cAh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="Yg9-lu-NmB"/>
+                            <constraint firstItem="BwG-uF-S29" firstAttribute="top" secondItem="Wif-kn-4ty" secondAttribute="bottom" constant="16" id="Z7c-vG-YTn"/>
+                            <constraint firstItem="24k-7W-C3s" firstAttribute="top" secondItem="r8t-zK-cAh" secondAttribute="bottom" constant="16" id="Zop-wD-8FB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BwG-uF-S29" secondAttribute="trailing" constant="25" id="fTk-a9-chj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wif-kn-4ty" secondAttribute="trailing" constant="25" id="k3l-1s-wAc"/>
+                            <constraint firstItem="V2V-pX-EWF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="zu9-2y-i18"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="SOS Security App" id="kyq-2l-mid"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="fgcuPoliceButton" destination="jpt-aV-3yA" id="l1z-aL-36W"/>
+                        <outlet property="locationAwarenessButton" destination="Wif-kn-4ty" id="RpS-ey-rH8"/>
+                        <outlet property="messagingButton" destination="Ehf-LA-gh0" id="PjW-jU-tbm"/>
+                        <outlet property="personalSecurityButton" destination="r8t-zK-cAh" id="LE7-Z3-vvW"/>
+                        <outlet property="safetyTimerButton" destination="24k-7W-C3s" id="9Ko-oU-d2U"/>
+                        <outlet property="socialMediaButton" destination="BwG-uF-S29" id="wj6-zH-ige"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1031.8840579710145" y="144.64285714285714"/>
+        </scene>
+        <!--Personal Security View Controller-->
+        <scene sceneID="aBI-CF-Mk3">
+            <objects>
+                <viewController id="u6t-rx-KrV" customClass="PersonalSecurityViewController" customModule="SOS_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ff1-l7-CdZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XL2-i0-R4w">
+                                <rect key="frame" x="25" y="25" width="150" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="AQK-ca-gcl"/>
+                                    <constraint firstAttribute="height" constant="300" id="f4e-yf-ecl"/>
+                                </constraints>
+                                <state key="normal" title="Self Defense">
+                                    <color key="titleColor" red="0.1535661817" green="0.11398909240000001" blue="0.44316354390000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUQ-Lb-jVX">
+                                <rect key="frame" x="239" y="25" width="150" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="18n-AF-5d9"/>
+                                    <constraint firstAttribute="width" constant="150" id="e50-mi-D6f"/>
+                                </constraints>
+                                <state key="normal" title="Scenario Library">
+                                    <color key="titleColor" red="0.1535661817" green="0.11398909240000001" blue="0.44316354390000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kpk-Fh-Jal">
+                                <rect key="frame" x="239" y="341" width="150" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="dfO-iQ-fUc"/>
+                                    <constraint firstAttribute="height" constant="300" id="ed0-Bn-rwm"/>
+                                </constraints>
+                                <state key="normal" title="Location Alerts">
+                                    <color key="titleColor" red="0.1535661817" green="0.11398909240000001" blue="0.44316354390000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohU-hr-AFe">
+                                <rect key="frame" x="25" y="341" width="150" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="6Jq-84-LTn"/>
+                                    <constraint firstAttribute="width" constant="150" id="gOj-Xb-OlI"/>
+                                </constraints>
+                                <state key="normal" title="Emergency Alerts">
+                                    <color key="titleColor" red="0.1535661817" green="0.11398909240000001" blue="0.44316354390000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CUQ-Lb-jVX" firstAttribute="top" secondItem="3zc-TW-L4K" secondAttribute="top" constant="25" id="9Np-8p-5ES"/>
+                            <constraint firstItem="XL2-i0-R4w" firstAttribute="leading" secondItem="3zc-TW-L4K" secondAttribute="leading" constant="25" id="Bcc-Ya-dWE"/>
+                            <constraint firstItem="3zc-TW-L4K" firstAttribute="trailing" secondItem="CUQ-Lb-jVX" secondAttribute="trailing" constant="25" id="QUe-fe-L66"/>
+                            <constraint firstItem="ohU-hr-AFe" firstAttribute="leading" secondItem="3zc-TW-L4K" secondAttribute="leading" constant="25" id="VXr-qQ-sNp"/>
+                            <constraint firstItem="Kpk-Fh-Jal" firstAttribute="top" secondItem="CUQ-Lb-jVX" secondAttribute="bottom" constant="16" id="ecO-fY-cvx"/>
+                            <constraint firstItem="3zc-TW-L4K" firstAttribute="trailing" secondItem="Kpk-Fh-Jal" secondAttribute="trailing" constant="25" id="kPr-0A-jbZ"/>
+                            <constraint firstItem="XL2-i0-R4w" firstAttribute="top" secondItem="3zc-TW-L4K" secondAttribute="top" constant="25" id="lcI-my-cST"/>
+                            <constraint firstItem="ohU-hr-AFe" firstAttribute="top" secondItem="XL2-i0-R4w" secondAttribute="bottom" constant="16" id="zZ9-Zz-Vaj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3zc-TW-L4K"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="emergencyAlerts" destination="ohU-hr-AFe" id="Hym-cS-Ukc"/>
+                        <outlet property="locationAlerts" destination="Kpk-Fh-Jal" id="SWP-PQ-bQu"/>
+                        <outlet property="scenarioLibraryButton" destination="CUQ-Lb-jVX" id="Vv4-24-xMM"/>
+                        <outlet property="selfBefenseButton" destination="XL2-i0-R4w" id="RMz-Cp-nd8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aqO-Ek-ltj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1813.0434782608697" y="144.64285714285714"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="unb-XS-AHh">
+            <objects>
+                <viewController id="UW0-Sk-dhM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b85-XP-hZ4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6BP-aU-NSo">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6BP-aU-NSo" firstAttribute="bottom" secondItem="e2l-rF-4WZ" secondAttribute="bottom" id="F6o-bi-E89"/>
+                            <constraint firstItem="6BP-aU-NSo" firstAttribute="leading" secondItem="e2l-rF-4WZ" secondAttribute="leading" id="OlT-sg-Htc"/>
+                            <constraint firstItem="6BP-aU-NSo" firstAttribute="trailing" secondItem="e2l-rF-4WZ" secondAttribute="trailing" id="q3U-Zc-bu0"/>
+                            <constraint firstItem="6BP-aU-NSo" firstAttribute="top" secondItem="e2l-rF-4WZ" secondAttribute="top" id="u0w-b6-pji"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="e2l-rF-4WZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TGs-aD-JVm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2630" y="145"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ySH-LC-gfI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Kh4-4z-B58" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qV8-06-irl">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Eov-On-TEZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="agS-wk-ix3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121.73913043478262" y="144.64285714285714"/>
+        </scene>
+    </scenes>
+</document>
