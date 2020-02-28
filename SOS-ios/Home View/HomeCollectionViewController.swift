@@ -17,7 +17,7 @@ class HomeCollectionViewController: UICollectionViewController, UICollectionView
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        collectionView.backgroundColor = .lightGray
+        collectionView.backgroundColor = .green
         collectionView.dataSource = self
         collectionView.delegate = self
 
