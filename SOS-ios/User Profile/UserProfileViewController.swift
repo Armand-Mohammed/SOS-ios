@@ -10,7 +10,6 @@ import UIKit
 
 class UserProfileViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
-    
     let headerId = "headerId"
     let cellId = "cellId"
     
@@ -27,6 +26,19 @@ class UserProfileViewController: UICollectionViewController, UICollectionViewDel
         
         // Register the workout posts area
         collectionView?.register(UserProfileCell.self, forCellWithReuseIdentifier: cellId)
+        
+        setupNavBar()
+    }
+        
+    func setupNavBar() {
+        navigationItem.title = "My Profile"
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "gear"), style: .plain, target: self, action: #selector(handleSettingsButton))
+    }
+    
+    @objc func handleSettingsButton() {
+        let settingsViewController = SettingsViewController()
+        navigationController?.pushViewController(settingsViewController, animated: true)
     }
     
     // numberOfItemsInSection

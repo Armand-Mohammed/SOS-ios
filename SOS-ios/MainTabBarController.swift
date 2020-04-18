@@ -34,10 +34,10 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate {
         let timerViewController = TimerViewController()
         timerViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .more, tag: 3)
         
-        let otherYouTubeViewController = OtherYouTubeViewController()
-        otherYouTubeViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .more, tag: 4)
+        let settingsViewController = SettingsViewController()
+        settingsViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .more, tag: 4)
 
-        let tabBarList = [selfDefenseViewController, mapViewController, userProfileViewController, timerViewController, otherYouTubeViewController]
+        let tabBarList = [selfDefenseViewController, mapViewController, userProfileViewController, timerViewController, settingsViewController]
 
         viewControllers = tabBarList
 

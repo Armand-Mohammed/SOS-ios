@@ -59,7 +59,7 @@ class UserProfileHeader: UICollectionViewCell {
     // Workouts Button
     lazy var workoutsButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setImage(#imageLiteral(resourceName: "ProfileIconDark"), for: .normal) // Change to a arm muscle picture
+        button.setImage(#imageLiteral(resourceName: "search_selected"), for: .normal)
         button.tintColor = UIColor.mainBlue()
         button.addTarget(self, action: #selector(handleChangeToWorkoutsView), for: .touchUpInside)
         return button
@@ -91,7 +91,7 @@ class UserProfileHeader: UICollectionViewCell {
     // Stats Button
     lazy var statsButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setImage(#imageLiteral(resourceName: "DumbbellIconDark"), for: .normal)
+        button.setImage(#imageLiteral(resourceName: "MessageIconLight"), for: .normal)
         button.tintColor = UIColor(white: 0, alpha: 0.2)
         button.addTarget(self, action: #selector(handleChangeToStatsView), for: .touchUpInside)
         return button

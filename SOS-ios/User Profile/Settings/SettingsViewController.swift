@@ -13,7 +13,7 @@ import UIKit
 
 private let reuseIdentifier = "SettingsCell"
 
-class SettingsViewController: UIViewController, UINavigationControllerDelegate {
+class SettingsViewController: UIViewController {
     
     // MARK: - Properties
     
