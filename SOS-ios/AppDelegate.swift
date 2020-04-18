@@ -22,25 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         navController.isNavigationBarHidden = true
         self.window?.rootViewController = navController
         self.window?.makeKeyAndVisible()
-        
-        // Main Menu
-        //let layout = UICollectionViewFlowLayout()
-        //let mainViewController = HomeCollectionViewController(collectionViewLayout: layout)
-        //window!.rootViewController = mainViewController
-
-        // Youtube
-//        let mainViewController = SelfDefenseController()
-//        window!.rootViewController = mainViewController
-        
-        // Timer
-//        let mainViewController = TimerViewController()
-//        window!.rootViewController = mainViewController
-        
-        // User Profile
-//        let viewController = UserProfileViewController(nibName: nil, bundle: nil)
-//        let navigationController = UINavigationController(rootViewController: viewController)
-//        window!.rootViewController = navigationController
-        
+                
         return true
     }
 

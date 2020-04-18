@@ -13,8 +13,6 @@
 		A410A38922F5F49000C3B837 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A410A38722F5F49000C3B837 /* LaunchScreen.storyboard */; };
 		A4163EED234903F000F28FCE /* SelfDefenseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4163EEC234903F000F28FCE /* SelfDefenseController.swift */; };
 		A4163EF02349087500F28FCE /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4163EEF2349087500F28FCE /* WebKit.framework */; };
-		A4163EF22349203B00F28FCE /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4163EF12349203B00F28FCE /* HomeCollectionViewController.swift */; };
-		A4163EF42349243900F28FCE /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4163EF32349243900F28FCE /* HomeCollectionViewCell.swift */; };
 		A4163EF6234964A600F28FCE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4163EF5234964A600F28FCE /* Extensions.swift */; };
 		A498D36F23BBEDE500DC1640 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A498D36E23BBEDE500DC1640 /* TimerViewController.swift */; };
 		A4A5B4C9244B5C7300A4A89E /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A5B4C8244B5C7300A4A89E /* MainTabBarController.swift */; };
@@ -55,8 +53,6 @@
 		A410A38A22F5F49000C3B837 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4163EEC234903F000F28FCE /* SelfDefenseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfDefenseController.swift; sourceTree = "<group>"; };
 		A4163EEF2349087500F28FCE /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		A4163EF12349203B00F28FCE /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
-		A4163EF32349243900F28FCE /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		A4163EF5234964A600F28FCE /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		A498D36E23BBEDE500DC1640 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		A4A5B4C8244B5C7300A4A89E /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
@@ -129,7 +125,6 @@
 				A498D36D23BBED6B00DC1640 /* Timer View */,
 				A498D36A23BBBFD100DC1640 /* Self Defense View */,
 				A4B0190923D769630035964C /* Other YouTube View */,
-				A498D36923BBBFB600DC1640 /* Home View */,
 				A410A37E22F5F48F00C3B837 /* AppDelegate.swift */,
 				A4A5B4C8244B5C7300A4A89E /* MainTabBarController.swift */,
 				A410A38022F5F48F00C3B837 /* ViewController.swift */,
@@ -147,15 +142,6 @@
 				A4163EEF2349087500F28FCE /* WebKit.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A498D36923BBBFB600DC1640 /* Home View */ = {
-			isa = PBXGroup;
-			children = (
-				A4163EF32349243900F28FCE /* HomeCollectionViewCell.swift */,
-				A4163EF12349203B00F28FCE /* HomeCollectionViewController.swift */,
-			);
-			path = "Home View";
 			sourceTree = "<group>";
 		};
 		A498D36A23BBBFD100DC1640 /* Self Defense View */ = {
@@ -334,7 +320,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4163EF42349243900F28FCE /* HomeCollectionViewCell.swift in Sources */,
 				A4B0191C23D76FE70035964C /* UserProfileViewController.swift in Sources */,
 				A4163EF6234964A600F28FCE /* Extensions.swift in Sources */,
 				A4B0191623D76D2B0035964C /* SettingsCell.swift in Sources */,
@@ -346,7 +331,6 @@
 				A410A38122F5F48F00C3B837 /* ViewController.swift in Sources */,
 				A4A5B4C9244B5C7300A4A89E /* MainTabBarController.swift in Sources */,
 				A498D36F23BBEDE500DC1640 /* TimerViewController.swift in Sources */,
-				A4163EF22349203B00F28FCE /* HomeCollectionViewController.swift in Sources */,
 				A4B0191823D76D4A0035964C /* UserInfoHeader.swift in Sources */,
 				A4163EED234903F000F28FCE /* SelfDefenseController.swift in Sources */,
 				A410A37F22F5F48F00C3B837 /* AppDelegate.swift in Sources */,
