@@ -6,6 +6,7 @@
 //  Copyright © 2019 sos. All rights reserved.
 //
 
+/*
 import UIKit
 
 class HomeCollectionViewCell: UICollectionViewCell, UICollectionViewDelegateFlowLayout {
@@ -42,3 +43,4 @@ class HomeCollectionViewCell: UICollectionViewCell, UICollectionViewDelegateFlow
         fatalError("init(coder:) has not been implemented")
     }
 }
+*/

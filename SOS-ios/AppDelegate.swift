@@ -17,10 +17,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        let navController = UINavigationController(rootViewController: MainTabBarController())
+        navController.isNavigationBarHidden = true
+        self.window?.rootViewController = navController
+        self.window?.makeKeyAndVisible()
+        
         // Main Menu
-        let layout = UICollectionViewFlowLayout()
-        let mainViewController = HomeCollectionViewController(collectionViewLayout: layout)
-        window!.rootViewController = mainViewController
+        //let layout = UICollectionViewFlowLayout()
+        //let mainViewController = HomeCollectionViewController(collectionViewLayout: layout)
+        //window!.rootViewController = mainViewController
 
         // Youtube
 //        let mainViewController = SelfDefenseController()
@@ -34,8 +40,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        let viewController = UserProfileViewController(nibName: nil, bundle: nil)
 //        let navigationController = UINavigationController(rootViewController: viewController)
 //        window!.rootViewController = navigationController
-        
-        window!.makeKeyAndVisible()
         
         return true
     }

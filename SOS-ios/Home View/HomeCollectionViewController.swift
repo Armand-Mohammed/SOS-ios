@@ -6,11 +6,17 @@
 //  Copyright © 2019 sos. All rights reserved.
 //
 
+/*
 import UIKit
 
 private let reuseIdentifier = "Cell"
 
-class HomeCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout, UINavigationControllerDelegate {
+class HomeCollectionViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource, UINavigationControllerDelegate {
+
+    // Initialize this in the init method so you do not have to explecitly unwrap it.
+    weak var collectionView: UICollectionView!
+
+//UICollectionViewController, UICollectionViewDelegateFlowLayout, UINavigationControllerDelegate {
     
     let cellNames: [String] = ["Self Defense", "Police", "Timer", "Map", "Stalker Alert", "SOS 911"]
 
@@ -25,23 +31,50 @@ class HomeCollectionViewController: UICollectionViewController, UICollectionView
         // self.clearsSelectionOnViewWillAppear = false
 
         // Register cell classes
-        self.collectionView!.register(HomeCollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        //self.collectionView!.register(HomeCollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        
+        collectionView.register(SelfDefenseController.self, forCellWithReuseIdentifier: "SelfDefenseCell")
 
         // Do any additional setup after loading the view.
         
     }
 
-    override func numberOfSections(in collectionView: UICollectionView) -> Int {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
         return 6
     }
 
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        switch indexPath.section {
+        case 0:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SelfDefenseCell", for: indexPath) as! SelfDefenseController
+            cell.bubbleView.addTarget(self, action: #selector(handleSelfDefenseButton), for: .touchUpInside)
+            return cell
+        case 1:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! MarketplaceHomeCell
+            //cell.seeMoreButton.addTarget(self, action: #selector(handleSeeMoreClicked(sender:)), for: .touchUpInside)
+            return cell
+        case 2:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! MarketplaceHomeCell
+            //cell.seeMoreButton.addTarget(self, action: #selector(handleSeeMoreClicked(sender:)), for: .touchUpInside)
+            return cell
+        case 3:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! MarketplaceHomeCell
+            //cell.seeMoreButton.addTarget(self, action: #selector(handleSeeMoreClicked(sender:)), for: .touchUpInside)
+            return cell
+        default:
+            print("There is a problem with cell for item at")
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! MarketplaceHomeCell
+            //cell.seeMoreButton.addTarget(self, action: #selector(handleSeeMoreClicked(sender:)), for: .touchUpInside)
+            return cell
+        }
+        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! HomeCollectionViewCell
         
         cell.cellLabel.text = cellNames[indexPath.row]
@@ -59,7 +92,8 @@ class HomeCollectionViewController: UICollectionViewController, UICollectionView
         return UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16)
     }
 
-    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    /*
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         switch indexPath.row {
         case 0:
             print("Navigating to YouTube")
@@ -72,5 +106,7 @@ class HomeCollectionViewController: UICollectionViewController, UICollectionView
             print("Something went wrong, default switch statement reached.")
         }
     }
+    */
     
 }
+*/

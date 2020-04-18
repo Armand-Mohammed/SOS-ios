@@ -17,6 +17,7 @@
 		A4163EF42349243900F28FCE /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4163EF32349243900F28FCE /* HomeCollectionViewCell.swift */; };
 		A4163EF6234964A600F28FCE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4163EF5234964A600F28FCE /* Extensions.swift */; };
 		A498D36F23BBEDE500DC1640 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A498D36E23BBEDE500DC1640 /* TimerViewController.swift */; };
+		A4A5B4C9244B5C7300A4A89E /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A5B4C8244B5C7300A4A89E /* MainTabBarController.swift */; };
 		A4B0190B23D769780035964C /* OtherYouTubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B0190A23D769780035964C /* OtherYouTubeViewController.swift */; };
 		A4B0191023D76CB90035964C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B0190F23D76CB90035964C /* SettingsViewController.swift */; };
 		A4B0191423D76D000035964C /* SettingsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B0191323D76D000035964C /* SettingsSection.swift */; };
@@ -58,6 +59,7 @@
 		A4163EF32349243900F28FCE /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		A4163EF5234964A600F28FCE /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		A498D36E23BBEDE500DC1640 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		A4A5B4C8244B5C7300A4A89E /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		A4B0190A23D769780035964C /* OtherYouTubeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherYouTubeViewController.swift; sourceTree = "<group>"; };
 		A4B0190F23D76CB90035964C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		A4B0191323D76D000035964C /* SettingsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSection.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				A4B0190923D769630035964C /* Other YouTube View */,
 				A498D36923BBBFB600DC1640 /* Home View */,
 				A410A37E22F5F48F00C3B837 /* AppDelegate.swift */,
+				A4A5B4C8244B5C7300A4A89E /* MainTabBarController.swift */,
 				A410A38022F5F48F00C3B837 /* ViewController.swift */,
 				A4163EF5234964A600F28FCE /* Extensions.swift */,
 				A410A38522F5F49000C3B837 /* Assets.xcassets */,
@@ -341,6 +344,7 @@
 				A4B0191023D76CB90035964C /* SettingsViewController.swift in Sources */,
 				A4B0191A23D76DDA0035964C /* EditProfileViewController.swift in Sources */,
 				A410A38122F5F48F00C3B837 /* ViewController.swift in Sources */,
+				A4A5B4C9244B5C7300A4A89E /* MainTabBarController.swift in Sources */,
 				A498D36F23BBEDE500DC1640 /* TimerViewController.swift in Sources */,
 				A4163EF22349203B00F28FCE /* HomeCollectionViewController.swift in Sources */,
 				A4B0191823D76D4A0035964C /* UserInfoHeader.swift in Sources */,
