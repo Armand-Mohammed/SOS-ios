@@ -147,7 +147,7 @@ class TimerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         secLabel.text = "sec"
         secLabel.font = UIFont.systemFont(ofSize: 16)
         secLabel.sizeToFit()
-        secLabel.frame = CGRect(x: pickerView.frame.width * 0.97, y: pickerView.frame.height * 0.5 - (secLabel.frame.height / 2.0), width: secLabel.frame.width, height: secLabel.frame.height)
+        secLabel.frame = CGRect(x: pickerView.frame.width * 0.87, y: pickerView.frame.height * 0.5 - (secLabel.frame.height / 2.0), width: secLabel.frame.width, height: secLabel.frame.height)
         pickerView.addSubview(secLabel)
     }
     

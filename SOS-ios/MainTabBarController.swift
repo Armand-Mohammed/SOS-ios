@@ -24,10 +24,11 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate {
         let selfDefenseViewController = SelfDefenseController()
         selfDefenseViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
 
-        let fakeCallViewController = FakeCallViewController()
-        fakeCallViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .more, tag: 1)
+        let mapViewController = MapViewController()
+        mapViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .more, tag: 1)
         
-        let userProfileViewController = UserProfileViewController()
+        let userProfileLayout = UICollectionViewFlowLayout()
+        let userProfileViewController = UserProfileViewController(collectionViewLayout: userProfileLayout)
         userProfileViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .more, tag: 2)
         
         let timerViewController = TimerViewController()
@@ -36,7 +37,7 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate {
         let otherYouTubeViewController = OtherYouTubeViewController()
         otherYouTubeViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .more, tag: 4)
 
-        let tabBarList = [selfDefenseViewController, fakeCallViewController, userProfileViewController, timerViewController, otherYouTubeViewController]
+        let tabBarList = [selfDefenseViewController, mapViewController, userProfileViewController, timerViewController, otherYouTubeViewController]
 
         viewControllers = tabBarList
 

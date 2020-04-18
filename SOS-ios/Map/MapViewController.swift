@@ -1,15 +1,15 @@
 //
-//  FakeCallViewController.swift
+//  MapViewController.swift
 //  SOS-ios
 //
-//  Created by Randy Hattab on 12/22/19.
-//  Copyright © 2019 sos. All rights reserved.
+//  Created by Randy Hattab on 4/18/20.
+//  Copyright © 2020 sos. All rights reserved.
 //
 
 import UIKit
 import MapKit
 
-class FakeCallViewController: UIViewController, CLLocationManagerDelegate {
+class MapViewController: UIViewController, CLLocationManagerDelegate {
 
 var window: UIWindow?
 var mapView: MKMapView?

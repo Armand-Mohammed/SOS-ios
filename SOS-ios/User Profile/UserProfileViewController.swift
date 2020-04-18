@@ -8,86 +8,72 @@
 
 import UIKit
 
-class UserProfileViewController: UIViewController, UINavigationControllerDelegate {
-
-    let topDividerView = UIView()
+class UserProfileViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
-    let profileImageView: UIImageView = {
-        let iv = UIImageView()
-        iv.image = UIImage(named: "randy")
-        iv.contentMode = .scaleAspectFill
-        iv.layer.cornerRadius = 4
-        iv.layer.masksToBounds = true
-        return iv
-    }()
     
-    let userBioLabel: UIButton = {
-        let button = UIButton(type: .system)
-        button.setTitle("Randy Hattab\n22\nText\nMore Text", for: .normal)
-        button.setTitleColor(.black, for: .normal)
-        button.contentVerticalAlignment = .top
-        button.contentHorizontalAlignment = .left
-        button.titleLabel?.lineBreakMode = .byCharWrapping
-        button.autoresizingMask = .flexibleWidth
-        button.autoresizesSubviews = true
-        button.isUserInteractionEnabled = false
-        return button
-    }()
+    let headerId = "headerId"
+    let cellId = "cellId"
     
-    let profileWeightLabel: UILabel = {
-        let label = UILabel()
-        label.text = "Weight: 168.0"
-        label.font = UIFont.systemFont(ofSize: 14)
-        return label
-    }()
-    
-    let profileHeightLabel: UILabel = {
-        let label = UILabel()
-        label.text = "Height: 5'7"
-        label.font = UIFont.systemFont(ofSize: 14)
-        return label
-    }()
+    var userId: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupNavBar()
+        collectionView?.backgroundColor = .white
+        collectionView?.alwaysBounceVertical = true
         
-        setupView()
+        // Register the header collection view
+        collectionView?.register(UserProfileHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerId)
+        
+        // Register the workout posts area
+        collectionView?.register(UserProfileCell.self, forCellWithReuseIdentifier: cellId)
     }
     
-    func setupNavBar() {
-        
-        navigationItem.title = "Profile"
-        
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "gear"), style: .plain, target: self, action: #selector(handleSettingsButton))
+    // numberOfItemsInSection
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 8
     }
     
-    @objc func handleSettingsButton() {
-        let settingsViewController = SettingsViewController()
-        navigationController?.pushViewController(settingsViewController, animated: true)
+    // cellForItemAt indexPath
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! UserProfileCell
+        
+        //cell.imageView.image = UIImage(named: "star")
+        //cell.textLabel.text = "Text"
+
+        return cell
     }
     
-    func setupView() {
-        view.backgroundColor = .white
+    // sizeForItemAt indexPath
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        view.addSubview(profileImageView)
-        profileImageView.anchor(top: view.safeAreaLayoutGuide.topAnchor, left: view.leftAnchor, bottom: nil, right: nil, paddingTop: 16, paddingLeft: 16, paddingBotton: 0, paddingRight: 0, width: 75, height: 120)
+        let width = view.frame.width / 2 - 0.5
+        let height = (width - 16) * 19.5 / 9 // Size calculated for ratio of iPhone camera
         
-        view.addSubview(userBioLabel)
-        userBioLabel.anchor(top: view.safeAreaLayoutGuide.topAnchor, left: profileImageView.rightAnchor, bottom: nil, right: view.rightAnchor, paddingTop: 8, paddingLeft: 16, paddingBotton: 0, paddingRight: 16, width: 0, height: 100)
-        
-        let stackView = UIStackView(arrangedSubviews: [profileHeightLabel, profileWeightLabel])
-        
-        stackView.axis = .horizontal
-        stackView.distribution = .fillEqually
-        
-        view.addSubview(stackView)
-        
-        stackView.anchor(top: nil, left: profileImageView.rightAnchor, bottom: profileImageView.bottomAnchor, right: view.rightAnchor, paddingTop: 4, paddingLeft: 16, paddingBotton: 2, paddingRight: 16, width: 0, height: 15)
-        
-        view.addSubview(topDividerView)
-        topDividerView.backgroundColor = .lightGray
-        topDividerView.anchor(top: profileImageView.bottomAnchor, left: view.leftAnchor, bottom: nil, right: view.rightAnchor, paddingTop: 8, paddingLeft: 0, paddingBotton: 0, paddingRight: 0, width: 0, height: 0.5)
+        return CGSize(width: width, height: height) // height was width * 1.75
     }
+    
+    // minimumInteritemSpacingForSectionAt
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0 // Was 0.5
+    }
+    
+    // minimumLineSpacingForSectionAt
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0 // Was 1
+    }
+    
+    // Make the header a UICollectionReusableView
+    // Returns the Header
+    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        
+        let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerId, for: indexPath) as! UserProfileHeader
+        
+        return header
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        return CGSize(width: view.frame.width, height: 550)
+    }
+    // End Header customization
 }

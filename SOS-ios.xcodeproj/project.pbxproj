@@ -16,6 +16,10 @@
 		A4163EF6234964A600F28FCE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4163EF5234964A600F28FCE /* Extensions.swift */; };
 		A498D36F23BBEDE500DC1640 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A498D36E23BBEDE500DC1640 /* TimerViewController.swift */; };
 		A4A5B4C9244B5C7300A4A89E /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A5B4C8244B5C7300A4A89E /* MainTabBarController.swift */; };
+		A4A5B4CC244BA62300A4A89E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A5B4CB244BA62300A4A89E /* MapViewController.swift */; };
+		A4A5B4CE244BA71200A4A89E /* UserProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A5B4CD244BA71200A4A89E /* UserProfileCell.swift */; };
+		A4A5B4D1244BA73B00A4A89E /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A5B4D0244BA73B00A4A89E /* BaseCell.swift */; };
+		A4A5B4D4244BA8CE00A4A89E /* UserProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A5B4D3244BA8CE00A4A89E /* UserProfileHeader.swift */; };
 		A4B0190B23D769780035964C /* OtherYouTubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B0190A23D769780035964C /* OtherYouTubeViewController.swift */; };
 		A4B0191023D76CB90035964C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B0190F23D76CB90035964C /* SettingsViewController.swift */; };
 		A4B0191423D76D000035964C /* SettingsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B0191323D76D000035964C /* SettingsSection.swift */; };
@@ -56,6 +60,10 @@
 		A4163EF5234964A600F28FCE /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		A498D36E23BBEDE500DC1640 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		A4A5B4C8244B5C7300A4A89E /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		A4A5B4CB244BA62300A4A89E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		A4A5B4CD244BA71200A4A89E /* UserProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileCell.swift; sourceTree = "<group>"; };
+		A4A5B4D0244BA73B00A4A89E /* BaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
+		A4A5B4D3244BA8CE00A4A89E /* UserProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileHeader.swift; sourceTree = "<group>"; };
 		A4B0190A23D769780035964C /* OtherYouTubeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherYouTubeViewController.swift; sourceTree = "<group>"; };
 		A4B0190F23D76CB90035964C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		A4B0191323D76D000035964C /* SettingsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSection.swift; sourceTree = "<group>"; };
@@ -120,6 +128,8 @@
 		A410A37D22F5F48F00C3B837 /* SOS-ios */ = {
 			isa = PBXGroup;
 			children = (
+				A4A5B4CF244BA73000A4A89E /* Utils */,
+				A4A5B4CA244BA61500A4A89E /* Map */,
 				A4B0191D23D770170035964C /* Fake Call */,
 				A4B0190C23D769DB0035964C /* User Profile */,
 				A498D36D23BBED6B00DC1640 /* Timer View */,
@@ -160,6 +170,34 @@
 			path = "Timer View";
 			sourceTree = "<group>";
 		};
+		A4A5B4CA244BA61500A4A89E /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				A4A5B4CB244BA62300A4A89E /* MapViewController.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		A4A5B4CF244BA73000A4A89E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A4A5B4D0244BA73B00A4A89E /* BaseCell.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A4A5B4D2244BA7DB00A4A89E /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A4B0191323D76D000035964C /* SettingsSection.swift */,
+				A4B0191523D76D2B0035964C /* SettingsCell.swift */,
+				A4B0190F23D76CB90035964C /* SettingsViewController.swift */,
+				A4B0191723D76D4A0035964C /* UserInfoHeader.swift */,
+				A4B0191923D76DDA0035964C /* EditProfileViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		A4B0190923D769630035964C /* Other YouTube View */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,11 +209,9 @@
 		A4B0190C23D769DB0035964C /* User Profile */ = {
 			isa = PBXGroup;
 			children = (
-				A4B0190F23D76CB90035964C /* SettingsViewController.swift */,
-				A4B0191323D76D000035964C /* SettingsSection.swift */,
-				A4B0191523D76D2B0035964C /* SettingsCell.swift */,
-				A4B0191723D76D4A0035964C /* UserInfoHeader.swift */,
-				A4B0191923D76DDA0035964C /* EditProfileViewController.swift */,
+				A4A5B4D2244BA7DB00A4A89E /* Settings */,
+				A4A5B4CD244BA71200A4A89E /* UserProfileCell.swift */,
+				A4A5B4D3244BA8CE00A4A89E /* UserProfileHeader.swift */,
 				A4B0191B23D76FE70035964C /* UserProfileViewController.swift */,
 			);
 			path = "User Profile";
@@ -320,8 +356,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4A5B4CE244BA71200A4A89E /* UserProfileCell.swift in Sources */,
 				A4B0191C23D76FE70035964C /* UserProfileViewController.swift in Sources */,
 				A4163EF6234964A600F28FCE /* Extensions.swift in Sources */,
+				A4A5B4D4244BA8CE00A4A89E /* UserProfileHeader.swift in Sources */,
 				A4B0191623D76D2B0035964C /* SettingsCell.swift in Sources */,
 				A4B0190B23D769780035964C /* OtherYouTubeViewController.swift in Sources */,
 				A4B0191F23D770280035964C /* FakeCallViewController.swift in Sources */,
@@ -330,9 +368,11 @@
 				A4B0191A23D76DDA0035964C /* EditProfileViewController.swift in Sources */,
 				A410A38122F5F48F00C3B837 /* ViewController.swift in Sources */,
 				A4A5B4C9244B5C7300A4A89E /* MainTabBarController.swift in Sources */,
+				A4A5B4D1244BA73B00A4A89E /* BaseCell.swift in Sources */,
 				A498D36F23BBEDE500DC1640 /* TimerViewController.swift in Sources */,
 				A4B0191823D76D4A0035964C /* UserInfoHeader.swift in Sources */,
 				A4163EED234903F000F28FCE /* SelfDefenseController.swift in Sources */,
+				A4A5B4CC244BA62300A4A89E /* MapViewController.swift in Sources */,
 				A410A37F22F5F48F00C3B837 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
